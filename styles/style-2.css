@@ -1,0 +1,132 @@
+body{
+    margin: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+/*heading section styles start*/
+.container{
+    margin: 2% 10%;
+    border-radius: 15px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header-fonts{
+    margin: 2%;
+    padding: 2%;
+    width: 50%;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+#header-fonts h1{
+    color: red;
+    font-size: 50px;
+}
+#header-fonts p{
+    color: lightgoldenrodyellow;
+    font-size: 15px;
+}
+.button{
+    margin: 5%;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    background-color:red;
+    font-size: 25px;
+    font-weight: 700;
+
+}
+#messi{
+    width: 50%;
+    padding: 5%;
+}
+/* heading section styles end */
+.main-container{
+    margin: 2% 10%;
+    padding: 50px 0px;
+    border-radius: 15px;
+    display: flex;
+}
+.main-buttons{
+    width: 250px;
+    height: 250px;
+    margin-right: 15px;
+    background-color: black;
+    border-radius: 10px;
+    
+
+}
+.buttons{
+    margin: 20px 20px;
+    padding: 15px 10px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+#upcoming-button{
+    color: white;
+    background-color: red;
+}
+.schedules{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+.schedule{
+    width: 260px;
+    height: auto;
+    text-align: center;
+    border: 0.2px solid lightgrey;
+    border-radius: 10px 10px 10px 10px;
+}
+.flags{
+    display: flex;
+    justify-content:space-between;
+    padding: 20px;
+    padding-bottom: 0px;
+    
+}
+#schedule-text p{
+    color: #aeabab;
+    font-size: 12px;
+}
+
+footer{
+    width: 100%;
+    height: 350px;
+    color: whitesmoke;
+    background-color: #161616;
+    text-align: center;
+    padding-top: 3em;
+}
+footer hr{
+    margin: 0% 10%;
+    border: none;
+    height: 1px;
+    background-color: gray;
+}
+.fa-facebook,.fa-twitter,.fa-github{
+    font-size: 40px;
+}
+.footer-icon-link{
+    display: flex;
+    justify-content:center;
+}
+.footer-link{
+    margin: 0px 30px;
+}
+.about-us{
+    display: flex;
+    justify-content:center;
+    margin: 2%;
+}
+.about-us p{
+    margin: 30px;
+    font-size: 10px;
+    color: lightgrey;
+}
