@@ -1,7 +1,9 @@
+/* body styles */
 body{
     margin: 0%;
     font-family: 'Poppins', sans-serif;
 }
+
 /*heading section styles start*/
 .container{
     margin: 2% 10%;
@@ -87,7 +89,6 @@ body{
     animation-delay: 4s;
     visibility: hidden;
     animation-fill-mode: forwards;
-
 }
 @keyframes moveup{
     0%{
@@ -100,7 +101,7 @@ body{
     }
 }
 #messi{
-    width: 50%;
+    width: 60%;
     padding: 5%;
     animation: zoomin 1s linear 1;
     animation-delay: 4s;
@@ -118,11 +119,15 @@ body{
     }
 }
 /* heading section styles end */
+
+
+/* main section styles start */
 .main-container{
     margin: 2% 10%;
     padding: 50px 0px;
     border-radius: 15px;
     display: flex;
+    justify-content: center;
 }
 .main-buttons{
     width: 250px;
@@ -176,7 +181,20 @@ body{
     color: #aeabab;
     font-size: 12px;
 }
+.tab-button{
+    margin: 5%;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    background-color:red;
+    font-size: 20px;
+    font-weight: 700;
+    visibility: hidden;
+}
+/* main section styles end */
 
+
+/* footer section start */
 footer{
     width: 100%;
     height: auto;
@@ -191,6 +209,7 @@ footer hr{
     height: 1px;
     background-color: gray;
 }
+/* footer font awesome icons */
 .fa-facebook,.fa-twitter,.fa-github{
     font-size: 40px;
 }
@@ -211,12 +230,19 @@ footer hr{
     font-size: 10px;
     color: lightgrey;
 }
-/* responsive website layout start */
+/* footer section styles end */
+
+
+/*----------------------------------------------
+   media queries start
+------------------------------------------------*/
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px){
     .container{
+
         margin: 5%;
-        padding: 5px;
+        padding: 30px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -253,7 +279,18 @@ footer hr{
         grid-template-columns: repeat(1, 1fr);
         grid-column-gap: 0px;
     }
+    .tab-button{
+        margin: 5%;
+        padding: 5px;
+        border-radius: 10px;
+        color: white;
+        background-color:red;
+        font-size: 20px;
+        font-weight: 700;
+        visibility: hidden;
+    }
     footer{
+        
         height: auto;
         display: flex;
         flex-direction: column;
@@ -268,3 +305,98 @@ footer hr{
         font-size: 10px;
     }
 }
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 991px){
+    .container{
+        margin: 5%;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+    }
+    #header-fonts{
+        padding: 10px;
+        width: 100%;
+    }
+    #header-fonts h1{
+        font-size: 25px;
+    }
+    #header-fonts h2{
+       font-size: 15px;
+    }
+    #header-fonts p{
+        font-size: 10px;
+    }
+    .button{
+        font-size: 15px;
+    }
+    #messi{
+        width: 70%;
+        padding: 5%;
+    }
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        margin: 0%;
+        padding-bottom: 20px;
+        padding-top: 0%;
+
+    }
+    .main-buttons{
+        width: 90%;
+        height: auto;
+        margin-bottom: 10px;
+        display:flex;
+        flex-direction: row;
+        justify-content:space-between;
+        background-color: white;
+    }
+    .buttons{
+        border: 0.1px solid lightgray;
+    }
+    .schedules{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        
+    }
+    .schedule{
+        width: 360px;
+    }
+    .tab-button{
+        width: 100px;
+        margin: 5%;
+        padding: 5px;
+        border-radius: 10px;
+        color: white;
+        background-color:red;
+        font-size: 20px;
+        font-weight: 700;
+        visibility: visible;
+    }
+    footer{
+        
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .about-us{
+        display: flex;
+        justify-content:center;
+        margin: 2%;
+    }
+    .about-us p{
+        font-size: 10px;
+    }
+}
+/*------------------------------------------ 
+    media queries end
+------------------------------------------- */
